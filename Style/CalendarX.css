@@ -1,0 +1,145 @@
+/* Calendar Item Containers */
+	
+
+	
+	div.DateSelector
+	{
+		width: 100%;
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+	}
+
+	
+	div.DateSelector > span
+	{
+		background: white;
+    width: 90px;
+    float: left;
+		position: relative;
+		
+    -webkit-box-shadow: 0px 0px 0px 1px #CDCDCD;
+    -moz-box-shadow: 0px 0px 0px 1px #CDCDCD;
+    box-shadow: 0px 0px 0px 1px #CDCDCD;
+		
+		margin:1%;
+		
+    cursor: pointer;
+		
+	}
+	
+	
+	/* Calendar Information Items */
+	
+	p.WeekDay 
+	{
+		color: black;
+    font-family: Tahoma;
+    background: #FF5757;
+    color: white;
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+		position: relative;
+		z-index: 1;
+	}
+	
+	p.MonthNumber 
+	{
+		color: black;
+    font-size: xx-large;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    font-family: Tahoma;
+    padding-top: 10px;
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+		position: relative;
+		z-index: 1;
+	}
+	
+	p.MonthTitle 
+	{
+		color: black;
+    font-size: small;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    font-family: Tahoma;
+    padding-top: 0px;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+		position: relative;
+		z-index: 1;
+		letter-spacing: 1px;
+	}
+
+	
+	/* Calander Date Status' */
+	
+	.Perfect > p.WeekDay
+	{
+		background: #40B440;
+	}
+	
+	.Good > p.WeekDay
+	{
+		background: #FF7D01;
+	}
+	
+	.Disabled > .MonthNumber
+	{
+		opacity:0.3;
+	}
+	
+	.Disabled > p.WeekDay
+	{
+		background: red;
+		opacity:0.8;
+	}
+	
+	/* Selectable Item */
+	
+	.SelectedOption
+	{
+		z-index:2;
+	
+		position:absolute;
+		
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		
+    -webkit-box-shadow: 0px 0px 0px 1px #CDCDCD;
+    -moz-box-shadow: 0px 0px 0px 1px #CDCDCD;
+    box-shadow: 0px 0px 0px 1px #CDCDCD;
+		
+		background: #40b440;
+		opacity: 0.7;
+		
+		display: flex;
+	}
+	
+	.checked
+	{
+		font-size: 340%;
+    margin-top: 40px;
+    margin-left: 23.5%;
+    position: absolute;
+    float: left;
+    text-align: center;
+    z-index: 6;
+		background: none!important;
+	}
